@@ -1,0 +1,39 @@
+#prod {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: .5rem;
+}
+
+#prod button {
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+}
+
+.prodimg {
+    width: 20%;
+    height: 100%;
+}
+
+.prodimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.prodinfo {
+    border-top: 1px solid rgba(0, 0, 255, 0.288);
+    border-bottom: 1px solid rgba(0, 0, 255, 0.288);
+    width: 50%;
+    height: 40%;
+    text-align: center;
+    color: #fff;
+}
+
+.prodinfo p {
+    margin-top: 1rem;
+}

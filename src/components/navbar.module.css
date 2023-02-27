@@ -1,0 +1,22 @@
+.navbar {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.list {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link {
+    color: #000;
+    text-decoration: none;
+    background-color: rgb(133, 182, 255);
+    padding: 1rem;
+    border-radius: 10px;
+}
