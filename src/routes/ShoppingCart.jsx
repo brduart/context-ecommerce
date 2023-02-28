@@ -11,7 +11,7 @@ const ShoppingCart = () => {
   const [total, setTotal] = useState()
 
   useEffect(() => {
-    setTotal(shoppingCart.reduce((acc, i) => i.price + acc, 0))
+    setTotal(shoppingCart.reduce((acc, i) => i.price + acc, 0).toLocaleString('pt-bt', {style: 'currency', currency: 'BRL'}))
 
   }, [shoppingCart])
 
@@ -26,7 +26,7 @@ const ShoppingCart = () => {
       </div>
       <div className={Style.totalprice}>
         <h1>TOTAL</h1>
-        <p>{`R$ ${total}`}</p>
+        <p>{total}</p>
       </div>
     </div>
   )

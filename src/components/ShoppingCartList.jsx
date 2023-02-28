@@ -14,7 +14,7 @@ const ShoppingCartList = ({product}) => {
       </div>
         <div className={Style.prodinfo}>
           <p>{product.name}</p>
-          <p>{product.price}</p>
+          <p>{product.price.toLocaleString('pt-bt', {style: 'currency', currency: 'BRL'})}</p>
         </div>
         <button onClick={() => setShoppingCart(shoppingCart.filter((i) => i.id !== product.id))}>Remover do Carrinho</button>
     </div>

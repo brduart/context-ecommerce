@@ -14,7 +14,7 @@ const GameProduct = ({product}) => {
       </div>
         <div className={Style.description}>
           <p>{product.name}</p>
-          <p>{`R$: ${product.price}`}</p>
+          <p>{product.price.toLocaleString('pt-bt', {style: 'currency', currency: 'BRL'})}</p>
         </div>
           <div className={Style.buybutton}>
             {shoppingCart.includes(product) ? (
